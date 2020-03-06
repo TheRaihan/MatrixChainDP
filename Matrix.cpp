@@ -1,5 +1,4 @@
-#include <iostream>
-#include <climits>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -8,7 +7,7 @@ int main()
 	int n = sizeof(dims) / sizeof(dims[0]);
 	int c[10][10], s[10][10];
 
-    // c[i,j] = Minimum number of scalar multiplications (i.e., cost)
+    	// c[i,j] = Minimum number of scalar multiplications (i.e., cost)
 	// needed to compute the matrix M[i]M[i+1]...M[j] = M[i..j]
 	// The cost is zero when multiplying one matrix
 
@@ -30,8 +29,8 @@ int main()
 
 				if (cost < c[i][j]){
 					c[i][j] = cost;
-                    s[i][j] = k;
-                }
+                    			s[i][j] = k;
+               			 }
 			}
 		}
 	}
